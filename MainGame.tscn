@@ -165,6 +165,6 @@ position = Vector2( -2456, 9954 )
 scale = Vector2( 4.29072, 4.29071 )
 frames = SubResource( 25 )
 animation = "Run"
-frame = 3
+frame = 5
 playing = true
 offset = Vector2( 598, -2237 )

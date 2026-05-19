@@ -10,10 +10,9 @@
 [ext_resource path="res://Background.gd" type="Script" id=8]
 
 [node name="Background" type="Node2D"]
-position = Vector2( 2, 0 )
 script = ExtResource( 8 )
 
-[node name="Set1" type="Node2D" parent="."]
+[node name="Set1" type="Node2D" parent="." groups=["Sets"]]
 
 [node name="Sky" type="Sprite" parent="Set1"]
 position = Vector2( 892, 175 )
@@ -79,7 +78,7 @@ texture = ExtResource( 7 )
 position = Vector2( 0, 199 )
 texture = ExtResource( 7 )
 
-[node name="Set2" type="Node2D" parent="."]
+[node name="Set2" type="Node2D" parent="." groups=["Sets"]]
 
 [node name="Sky" type="Sprite" parent="Set2"]
 position = Vector2( 892, 175 )
@@ -137,7 +136,7 @@ texture = ExtResource( 6 )
 position = Vector2( 522, 0 )
 texture = ExtResource( 6 )
 
-[node name="Set3" type="Node2D" parent="."]
+[node name="Set3" type="Node2D" parent="." groups=["Sets"]]
 
 [node name="Sky" type="Sprite" parent="Set3"]
 position = Vector2( 892, 175 )
