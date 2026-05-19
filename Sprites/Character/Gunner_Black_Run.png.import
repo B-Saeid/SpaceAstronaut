@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gunner_Black_Idle.png-8f9c9d4b0355df511e4677cd6ba2de39.stex"
+path="res://.import/Gunner_Black_Run.png-ad7e4872dcb2012c0814615272c8e556.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Character/Gunner_Black_Idle.png"
-dest_files=[ "res://.import/Gunner_Black_Idle.png-8f9c9d4b0355df511e4677cd6ba2de39.stex" ]
+source_file="res://Sprites/Character/Gunner_Black_Run.png"
+dest_files=[ "res://.import/Gunner_Black_Run.png-ad7e4872dcb2012c0814615272c8e556.stex" ]
 
 [params]
 
