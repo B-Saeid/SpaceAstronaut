@@ -3,6 +3,9 @@ extends RigidBody2D
 
 onready var animation = get_node("AnimatedSprite")
 onready var background = get_parent().get_node("Background")
+export var jumpForce = 220;
+var isJumping = false;
+var isDead = false;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,13 +20,23 @@ func _ready():
 
 
 func _on_Player_body_entered(body):
-	print("Entered")
-	print(body.get_parent().is_in_group("Obstacles"))
+	if(body.get_parent().is_in_group("Ground")):
+		animation.play("Run")
+		isJumping = false
 	if body.get_parent().is_in_group("Obstacles"): 
 		Die()
 
+func _physics_process(delta):
+	Jump();
+
+func Jump():
+	if Input.is_action_pressed("Jump") && !isJumping && !isDead:
+		set_axis_velocity(Vector2(0, -jumpForce))
+		animation.play("Jump")
+		isJumping = true
 
 func Die():
+	isDead = true
 	animation.play("Death")
 	background.speed = 0
 	# get_tree().quit()

@@ -158,7 +158,7 @@ animations = [ {
 
 [sub_resource type="CapsuleShape2D" id=26]
 radius = 27.0
-height = 84.0
+height = 76.0
 
 [node name="MainGame" type="Node2D"]
 
@@ -166,23 +166,24 @@ height = 84.0
 position = Vector2( -2, 0 )
 
 [node name="Player" type="RigidBody2D" parent="."]
-position = Vector2( 139, -278 )
+position = Vector2( -12, -10 )
 mode = 2
+gravity_scale = 2.0
 contacts_reported = 10
 contact_monitor = true
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
-position = Vector2( -2456, 9954 )
-scale = Vector2( 4.29072, 4.29071 )
+position = Vector2( -2260.95, 8950.38 )
+scale = Vector2( 3.96455, 3.84095 )
 frames = SubResource( 25 )
 animation = "Run"
-frame = 1
+frame = 4
 playing = true
 offset = Vector2( 598, -2237 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( 103, 346 )
+position = Vector2( 105, 347 )
 shape = SubResource( 26 )
 
 [connection signal="body_entered" from="Player" to="Player" method="_on_Player_body_entered"]
