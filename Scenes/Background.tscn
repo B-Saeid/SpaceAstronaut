@@ -49,27 +49,27 @@ texture = ExtResource( 4 )
 position = Vector2( 0, 130.295 )
 shape = SubResource( 1 )
 
-[node name="Rock" type="Sprite" parent="Set1" groups=["Obstacles"]]
+[node name="Rock" type="Sprite" parent="Set1"]
 position = Vector2( 503, 527 )
 texture = ExtResource( 5 )
 
-[node name="Rock2" type="Sprite" parent="Set1/Rock" groups=["Obstacles"]]
+[node name="Rock2" type="Sprite" parent="Set1/Rock"]
 position = Vector2( -356, 3 )
 texture = ExtResource( 5 )
 
-[node name="Rock3" type="Sprite" parent="Set1/Rock" groups=["Obstacles"]]
+[node name="Rock3" type="Sprite" parent="Set1/Rock"]
 position = Vector2( -197, -76 )
 texture = ExtResource( 5 )
 
-[node name="Rock4" type="Sprite" parent="Set1/Rock" groups=["Obstacles"]]
+[node name="Rock4" type="Sprite" parent="Set1/Rock"]
 position = Vector2( 354, -54 )
 texture = ExtResource( 5 )
 
-[node name="Rock5" type="Sprite" parent="Set1/Rock" groups=["Obstacles"]]
+[node name="Rock5" type="Sprite" parent="Set1/Rock"]
 position = Vector2( 719, -70 )
 texture = ExtResource( 5 )
 
-[node name="Rock6" type="Sprite" parent="Set1/Rock" groups=["Obstacles"]]
+[node name="Rock6" type="Sprite" parent="Set1/Rock"]
 position = Vector2( 1083, -13 )
 texture = ExtResource( 5 )
 
@@ -119,27 +119,27 @@ texture = ExtResource( 4 )
 position = Vector2( 0, 130.295 )
 shape = SubResource( 1 )
 
-[node name="Rock" type="Sprite" parent="Set2" groups=["Obstacles"]]
+[node name="Rock" type="Sprite" parent="Set2"]
 position = Vector2( 503, 527 )
 texture = ExtResource( 5 )
 
-[node name="Rock2" type="Sprite" parent="Set2/Rock" groups=["Obstacles"]]
+[node name="Rock2" type="Sprite" parent="Set2/Rock"]
 position = Vector2( -356, 3 )
 texture = ExtResource( 5 )
 
-[node name="Rock3" type="Sprite" parent="Set2/Rock" groups=["Obstacles"]]
+[node name="Rock3" type="Sprite" parent="Set2/Rock"]
 position = Vector2( -197, -76 )
 texture = ExtResource( 5 )
 
-[node name="Rock4" type="Sprite" parent="Set2/Rock" groups=["Obstacles"]]
+[node name="Rock4" type="Sprite" parent="Set2/Rock"]
 position = Vector2( 354, -54 )
 texture = ExtResource( 5 )
 
-[node name="Rock5" type="Sprite" parent="Set2/Rock" groups=["Obstacles"]]
+[node name="Rock5" type="Sprite" parent="Set2/Rock"]
 position = Vector2( 719, -70 )
 texture = ExtResource( 5 )
 
-[node name="Rock6" type="Sprite" parent="Set2/Rock" groups=["Obstacles"]]
+[node name="Rock6" type="Sprite" parent="Set2/Rock"]
 position = Vector2( 1083, -13 )
 texture = ExtResource( 5 )
 
@@ -207,27 +207,27 @@ texture = ExtResource( 4 )
 position = Vector2( 0, 130.295 )
 shape = SubResource( 1 )
 
-[node name="Rock" type="Sprite" parent="Set3" groups=["Obstacles"]]
+[node name="Rock" type="Sprite" parent="Set3"]
 position = Vector2( 503, 527 )
 texture = ExtResource( 5 )
 
-[node name="Rock2" type="Sprite" parent="Set3/Rock" groups=["Obstacles"]]
+[node name="Rock2" type="Sprite" parent="Set3/Rock"]
 position = Vector2( -356, 3 )
 texture = ExtResource( 5 )
 
-[node name="Rock3" type="Sprite" parent="Set3/Rock" groups=["Obstacles"]]
+[node name="Rock3" type="Sprite" parent="Set3/Rock"]
 position = Vector2( -197, -76 )
 texture = ExtResource( 5 )
 
-[node name="Rock4" type="Sprite" parent="Set3/Rock" groups=["Obstacles"]]
+[node name="Rock4" type="Sprite" parent="Set3/Rock"]
 position = Vector2( 354, -54 )
 texture = ExtResource( 5 )
 
-[node name="Rock5" type="Sprite" parent="Set3/Rock" groups=["Obstacles"]]
+[node name="Rock5" type="Sprite" parent="Set3/Rock"]
 position = Vector2( 719, -70 )
 texture = ExtResource( 5 )
 
-[node name="Rock6" type="Sprite" parent="Set3/Rock" groups=["Obstacles"]]
+[node name="Rock6" type="Sprite" parent="Set3/Rock"]
 position = Vector2( 1083, -13 )
 texture = ExtResource( 5 )
 

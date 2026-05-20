@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://Sprites/Character/Gunner_Black_Crouch.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Character/Gunner_Black_Death.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sprites/Character/Gunner_Black_Run.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Character/Gunner_Black_Idle.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=7]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -167,16 +168,21 @@ position = Vector2( -2, 0 )
 [node name="Player" type="RigidBody2D" parent="."]
 position = Vector2( 139, -278 )
 mode = 2
+contacts_reported = 10
+contact_monitor = true
+script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 position = Vector2( -2456, 9954 )
 scale = Vector2( 4.29072, 4.29071 )
 frames = SubResource( 25 )
 animation = "Run"
-frame = 4
+frame = 1
 playing = true
 offset = Vector2( 598, -2237 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 103, 346 )
 shape = SubResource( 26 )
+
+[connection signal="body_entered" from="Player" to="Player" method="_on_Player_body_entered"]
