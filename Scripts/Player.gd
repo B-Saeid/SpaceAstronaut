@@ -20,10 +20,12 @@ func _ready():
 
 
 func _on_Player_body_entered(body):
-	if(body.get_parent().is_in_group("Ground")):
+	if(isDead):
+		pass
+	elif(body.get_parent().is_in_group("Ground")):
 		animation.play("Run")
 		isJumping = false
-	if body.get_parent().is_in_group("Obstacles"): 
+	elif body.get_parent().is_in_group("Obstacles"): 
 		Die()
 
 func _physics_process(delta):

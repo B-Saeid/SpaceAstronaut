@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Background/sky.png" type="Texture" id=1]
 [ext_resource path="res://Background/mountain.png" type="Texture" id=2]
 [ext_resource path="res://UI/Montserrat-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -15,6 +16,7 @@ font_data = ExtResource( 3 )
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 4 )
 
 [node name="Sky" type="TextureRect" parent="."]
 margin_right = 1024.0
@@ -62,3 +64,6 @@ margin_right = 143.0
 margin_bottom = 116.0
 custom_fonts/font = SubResource( 2 )
 text = "Exit"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]

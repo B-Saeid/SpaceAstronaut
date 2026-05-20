@@ -95,8 +95,31 @@ shape = SubResource( 2 )
 [node name="Water" parent="Set1" instance=ExtResource( 9 )]
 position = Vector2( 282, 382 )
 
+[node name="Water2" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 565, 281 )
+
+[node name="Water3" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 649, 332 )
+
+[node name="Water4" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 725, 382 )
+
+[node name="Water5" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 1216, 383 )
+
+[node name="Water6" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 1269, 315 )
+
+[node name="Water7" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 1365, 265 )
+
+[node name="Water8" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 1445, 315 )
+
+[node name="Water9" parent="Set1" instance=ExtResource( 9 )]
+position = Vector2( 1501, 383 )
+
 [node name="Set2" type="Node2D" parent="." groups=["Sets"]]
-visible = false
 
 [node name="Sky" type="Sprite" parent="Set2"]
 position = Vector2( 892, 175 )
@@ -185,7 +208,6 @@ shape = SubResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Set3" type="Node2D" parent="." groups=["Sets"]]
-visible = false
 
 [node name="Sky" type="Sprite" parent="Set3"]
 position = Vector2( 892, 175 )

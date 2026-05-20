@@ -1,10 +1,9 @@
-extends Node2D
+extends Control
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-onready var oxygenUINode = get_parent().get_parent().get_parent().get_node("OxygenUI")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -17,7 +16,9 @@ func _ready():
 #	pass
 
 
-func _on_Area2D_body_entered(body):
-	if body.name == "Player":
-		visible = false
-		oxygenUINode.oxygenValue += 1
+func _on_PlayButton_pressed():
+	get_tree().change_scene("res://Scenes/Story.tscn")
+
+
+func _on_ExitButton_pressed():
+	get_tree().quit()
